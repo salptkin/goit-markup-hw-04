@@ -408,3 +408,8 @@ body {
     gap: 16px;
     list-style-type: none;
 }
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--pressed-state);
+}
