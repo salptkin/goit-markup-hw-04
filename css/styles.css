@@ -1,0 +1,331 @@
+/* TANIMLANAN GENEL ÖZELLİKLER */
+:root {
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --modal-overlay: rgba(46, 47, 66, 0.4);
+    --hero-background: rgba(46, 47, 66, 0.7);
+    --white-background: #FFFFFF;
+    --modal-background: #FCFCFC;
+
+    --font-family-main: Roboto, sans-serif;
+    --font-family-secondary: Raleway, sans-serif;
+    --font-family-logo: Raleway, sans-serif;
+}
+
+/* TANIMLANAN BODY ÖZELLİKLERİ */
+body {
+    font-family: var(--font-family-main);
+    color: var(--text);
+    background-color: var(--white-background);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+/* TANIMLANAN LOGO ÖZELLİKLERİ */
+.logo {
+    font-family: var(--font-family-logo);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--primary-brand);
+    text-transform: uppercase;
+    margin-right: 76px;
+}
+
+.span {
+    color: var(--dark);
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* TANIMLANAN HEADER ÖZELLİKLERİ */
+.home-nav {
+    background-color: var(--white-background);
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid var(--accent);
+    height: 72px;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.header-ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.header-ul .list:last-child {
+    margin: 0;
+}
+
+.header-ul .list .link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+    text-decoration: none;
+    padding: 24px 0;
+}
+
+.header-ul .list .link:hover,
+.header-ul .list .link:focus {
+    color: var(--pressed-state);
+}
+
+.address {
+    font-style: normal;
+}
+
+.address .address-ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.address-ul .list {
+    margin-right: 40px;
+}
+
+.address-ul .list:last-child {
+    margin: 0;
+}
+
+.address .list .link {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.address .list .link:hover,
+.address .list .link:focus {
+    color: var(--pressed-state);
+}
+
+/* TANIMLANAN HERO ÖZELLİKLERİ */
+.hero {
+    background-color: var(--dark);
+    padding: 188px 0;
+}
+
+.first-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-header {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    max-width: 496px;
+    margin-bottom: 48px;
+}
+
+/* TANIMLANAN BUTTON ÖZELLİKLERİ */
+.button {
+    font-family: var(--font-family-main);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    background-color: var(--primary-brand);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--pressed-state);
+    color: #FFFFFF;
+}
+
+/* TANIMLANAN SECTION-2 ÖZELLİKLERİ */
+.second-section {
+    background-color: var(--light);
+    padding: 120px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark);
+    margin-bottom: 72px;
+}
+
+.list {
+    background-color: #FFFFFF;
+}
+
+.section-ul {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+}
+
+.section-ul .list {
+    background-color: var(--white-background);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.section-ul .list.section-second-list {
+    width: calc((100% - 72px) / 4);
+}
+
+
+.section-ul .list .subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.section-ul .list .text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    text-align: center;
+}
+
+/* TANIMLANAN SECTION-3 ÖZELLİKLERİ */
+.our-team {
+    background-color: var(--light);
+    padding: 120px 0;
+}
+
+.card {
+    padding: 32px 0;
+}
+
+.card-wrap {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+/* TANIMLANAN SECTION-4 ÖZELLİKLERİ */
+.fourth-section {
+    background-color: var(--light);
+    padding: 120px 0;
+}
+
+.four {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.four .list {
+    width: calc((100% - 48px) / 3);
+}
+
+.list-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.list-image-container-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    background-color: var(--primary-brand);
+    padding: 40px 32px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list.last:hover .list-image-container-text {
+    transform: translateY(0);
+}
+
+/* TANIMLANAN FOOTER ÖZELLİKLERİ */
+.footer {
+    background-color: var(--dark);
+    padding: 100px 0;
+}
+
+.footer .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-brand);
+    display: inline-block;
+    margin-bottom: 16px;
+
+}
+
+.footer .logo .span {
+    color: #F4F4FD;
+    display: inline-block;
+}
+
+.footer .text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--light);
+    max-width: 264px;
+}
