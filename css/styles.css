@@ -61,6 +61,9 @@ body {
 .header {
     border-bottom: 1px solid var(--accent);
     height: 72px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-div {
@@ -89,11 +92,29 @@ body {
     color: var(--dark);
     text-decoration: none;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-ul .list .link:hover,
 .header-ul .list .link:focus {
     color: var(--pressed-state);
+}
+
+.header-ul .list:first-child .link {
+    position: relative;
+    color: var(--pressed-state);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-ul .list:first-child .link:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--pressed-state);
+    border-radius: 2px;
 }
 
 .address {
@@ -119,6 +140,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--text);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .list .link:hover,
@@ -130,6 +152,12 @@ body {
 .hero {
     background-color: var(--dark);
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .first-section-container {
@@ -140,7 +168,6 @@ body {
 }
 
 .hero-header {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -155,7 +182,7 @@ body {
     font-family: var(--font-family-main);
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: var(--primary-brand);
     color: #FFFFFF;
@@ -165,7 +192,7 @@ body {
     height: 56px;
     border: none;
     border-radius: 4px;
-    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
