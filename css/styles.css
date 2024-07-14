@@ -432,6 +432,12 @@ body {
     margin-bottom: 16px;
 }
 
+.icons-footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
 .social-media-icons {
     gap: 24px;
 }
