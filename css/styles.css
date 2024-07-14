@@ -330,6 +330,10 @@ body {
                 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.section-ul {
+    gap: 24px;
+}
+
 /* TANIMLANAN SECTION-4 ÖZELLİKLERİ */
 .fourth-section {
     background-color: var(--light);
