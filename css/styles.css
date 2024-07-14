@@ -432,16 +432,6 @@ body {
     margin-bottom: 16px;
 }
 
-.icons-footer {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
-
-.social-media-icons {
-    gap: 24px;
-}
-
 .social-media-icons-list {
     display: flex;
     list-style-type: none;
@@ -459,4 +449,9 @@ body {
 
 .svg-class {
     fill: #f4f4fd;
+}
+
+.icons-footer {
+    display: flex;
+    gap: 16px;
 }
