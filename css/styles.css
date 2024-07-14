@@ -270,6 +270,17 @@ body {
     text-align: center;
 }
 
+.second-section-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+}
+
 /* TANIMLANAN SECTION-3 ÖZELLİKLERİ */
 .our-team {
     background-color: var(--light);
@@ -412,4 +423,8 @@ body {
 .footer-link:hover,
 .footer-link:focus {
     background-color: var(--pressed-state);
+}
+
+.svg-class {
+    fill: #f4f4fd;
 }
